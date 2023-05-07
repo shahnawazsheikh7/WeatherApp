@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+        <div class="tabs">
+            <div class="tab" tab1>
+                Your Weather
+            </div>
+            <div class="tab" tab2>
+                Search Weather
+            </div>
+        </div>
+        <div class="main">
+            <div class="grant-access-container">
+                <img src="./assets/location.png" alt="" class="grant-access-image">
+                <h2>Grant Location Access</h2>
+                <p>Allow Access to get weather Information</p>
+                <button class="grant-access-btn" >Grant Access</button>
+            </div>
+            <form class="search-weather-container">
+                <input type="text" placeholder="Search for city..." searchCity>
+                <button class="search-btn" type="submit">
+                    <img src="./assets/search.png" alt="" class="search-image">
+                </button>
+            </form>
+            <div class="loading-screen-container">
+                <img src="./assets/loading.gif" alt="" class="loading-screen-image">
+                <p>Loading</p>
+            </div>
+
+            <div class="weather-info-container">
+                <div class="weather-info-main">
+                    <div class="weather-city"></div>
+                    <img class="weather-city-icon">
+
+                </div>
+                <div class="weather-description"></div>
+                <img class="weather-icon">
+                <div class="temperature"></div>
+
+                <div class="weather-cards">
+                    <div class="card">
+                        <img src="./assets/wind.png" alt="" class="card-img">
+                        <div class="card-info">WINDSPEED</div>
+                        <div class="card-value" windspeed></div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/humidity.png" alt="" class="card-img">
+                        <div class="card-info">HUMIDITY</div>
+                        <div class="card-value" humidity></div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/cloud.png" alt="" class="card-img">
+                        <div class="card-info">CLOUD</div>
+                        <div class="card-value" cloud></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
